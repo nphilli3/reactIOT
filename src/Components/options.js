@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Options = (props) => {
+const options = (props) => {
 	return (
 		<section>
 			<div className="row" id="projects">
@@ -28,4 +28,4 @@ const Options = (props) => {
 	)
 }
 
-export default Options
+export default options

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import Header from './Components/header'
+import {Header, NavBar} from './Components/header'
+// import Header from './Components/header'
+// import NavBar from './Components/header'
 import Jumbo from './Components/jumbo'
 import Options from'./Components/options'
 import Footer from './Components/footer'
@@ -17,7 +19,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header />
+        <header className="row">
+          <Header />
+          <NavBar />
+        </header>
+          
         <Jumbo />
         <Options />
         <Footer />

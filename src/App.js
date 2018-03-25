@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Header, NavBar} from './Components/header'
+import Dropdown from './Components/dropdown'
 // import Header from './Components/header'
 // import NavBar from './Components/header'
 import Jumbo from './Components/jumbo'
@@ -19,10 +20,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="row">
-          <Header />
-          <NavBar />
-        </header>
+        <Dropdown />
           
         <Jumbo />
         <Options />

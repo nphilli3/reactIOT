@@ -17,10 +17,10 @@ class App extends Component {
 
     return (
       <div className="App">
-      <Header />
-       <Jumbo />
-       <Options />
-       <Footer />
+        <Header />
+        <Jumbo />
+        <Options />
+        <Footer />
         
       </div>
     );

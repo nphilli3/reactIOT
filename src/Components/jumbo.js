@@ -10,7 +10,7 @@ const jumbo = (props) => {
     	</div>
     		<div>
       			<h3>Recruiting Ideas for the future</h3>
-      			<a id="jumbobutton" className="btn btn-primary" align="center" href="#projects" role="button">See all</a>
+      			<a id="jumbobutton" className="btn btn-primary" align="center" href="#projects" role="button">Get Involved</a>
     		</div>
   		</div>
     	

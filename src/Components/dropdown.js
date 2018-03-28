@@ -16,37 +16,39 @@ export default class Dropdown extends React.Component {
       collapsed: !this.state.collapsed
     });
   }
-  render() {
+
+
+render(){
     return (
-      <div>
+      <div className="clearfix">
         <Navbar color="faded" light>
           <NavbarBrand href="/" className="mr-auto">Hilliard IOT</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
+            <Nav navbar className="mr-auto ">
               <NavItem>
-                <NavLink href="">Team</NavLink>
+                <NavLink className="float-right" href="">Team</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Current Projects</NavLink>
+                <NavLink className="float-right" href="">Current Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Events</NavLink>
+                <NavLink className="float-right" href="">Events</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Suggestion Box</NavLink>
+                <NavLink className="float-right" href="">Suggestion Box</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Temperature</NavLink>
+                <NavLink className="float-right" href="">Temperature</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Robot</NavLink>
+                <NavLink className="float-right" href="">Robot</NavLink>
               </NavItem>  
               <NavItem>
-                <NavLink href="">Club Information</NavLink>
+                <NavLink className="float-right" href="">Club Information</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Contact Us</NavLink>
+                <NavLink className="float-right" href="">Contact Us</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

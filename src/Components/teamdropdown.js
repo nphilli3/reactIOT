@@ -44,13 +44,13 @@ class Teamdropdown extends Component {
         <Collapse isOpen={this.state.collapse}>
           <div>
             <Row>
-              <MyCard image={Elija} title='Elija Blosser' link={this.links.ElijaLink}/>
-              <MyCard image={Don} title='Don Smoyer' link={this.links.Donlink}/>
-              <MyCard image={RoDreko} title='RoDreko Steward'link={this.links.RoDrekolink}/>
-              <MyCard image={Nate} title='Nathanel Phillips'link={this.links.Natelink}/>
+              <MyCard image={Elija} title='Elija' link={this.links.ElijaLink}/>
+              <MyCard image={Don} title='Don' link={this.links.Donlink}/>
+              <MyCard image={RoDreko} title='RoDreko'link={this.links.RoDrekolink}/>
+              <MyCard image={Nate} title='Nate'link={this.links.Natelink}/>
               <MyCard image={Willie} title='Willie' link={this.links.Willielink}/>
-              <MyCard image={Matt} title='Matt Bunfill' link={this.links.Mattlink}/>
-              <MyCard image={Tim} title='Tim Glass' link={this.links.Timlink}/>
+              <MyCard image={Matt} title='Matt' link={this.links.Mattlink}/>
+              <MyCard image={Tim} title='Tim' link={this.links.Timlink}/>
             </Row>
           </div>
         </Collapse>

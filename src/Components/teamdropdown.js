@@ -12,13 +12,26 @@ import Tim from '../images/tim.jpeg'
 // Import Custom Components
 import MyCard from './card' 
 
+
+
 //Define class and toggle props
 class Teamdropdown extends Component {
+
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = { collapse: false };
+    this.links = {
+      ElijaLink: 'https://intranet.global.dish.com/employeeSearchDetails/2892057/',
+      Donlink: 'https://intranet.global.dish.com/employeeSearchDetails/285073/',
+      RoDrekolink: 'https://intranet.global.dish.com/employeeSearchDetails/532726/',
+      Natelink: 'https://intranet.global.dish.com/employeeSearchDetails/1693303/',
+      Willielink: 'https://intranet.global.dish.com/employeeSearchDetails/373709/',
+      Mattlink: 'https://intranet.global.dish.com/employeeSearchDetails/2848139/',
+      Timlink: 'https://intranet.global.dish.com/employeeSearchDetails/2758043/'
+    }
   }
+
 //set the toggle
   toggle() {
     this.setState({ collapse: !this.state.collapse });
@@ -31,13 +44,13 @@ class Teamdropdown extends Component {
         <Collapse isOpen={this.state.collapse}>
           <div>
             <Row>
-              <MyCard image={Elija} title='Elija Blosser' link='https://intranet.global.dish.com/employeeSearchDetails/2892057/'/>
-              <MyCard image={Don} title='Don Smoyer' link='https://intranet.global.dish.com/employeeSearchDetails/285073/'/>
-              <MyCard image={RoDreko} title='RoDreko Steward'link='https://intranet.global.dish.com/employeeSearchDetails/532726/'/>
-              <MyCard image={Nate} title='Nathanel Phillips'link='https://intranet.global.dish.com/employeeSearchDetails/1693303/'/>
-              <MyCard image={Willie} title='Willie' link='https://intranet.global.dish.com/employeeSearchDetails/373709/'/>
-              <MyCard image={Matt} title='Matt Bunfill' link='https://intranet.global.dish.com/employeeSearchDetails/2848139/'/>
-              <MyCard image={Tim} title='Tim Glass' link='https://intranet.global.dish.com/employeeSearchDetails/2758043/'/>
+              <MyCard image={Elija} title='Elija Blosser' link={this.links.ElijaLink}/>
+              <MyCard image={Don} title='Don Smoyer' link={this.links.Donlink}/>
+              <MyCard image={RoDreko} title='RoDreko Steward'link={this.links.RoDrekolink}/>
+              <MyCard image={Nate} title='Nathanel Phillips'link={this.links.Natelink}/>
+              <MyCard image={Willie} title='Willie' link={this.links.Willielink}/>
+              <MyCard image={Matt} title='Matt Bunfill' link={this.links.Mattlink}/>
+              <MyCard image={Tim} title='Tim Glass' link={this.links.Timlink}/>
             </Row>
           </div>
         </Collapse>

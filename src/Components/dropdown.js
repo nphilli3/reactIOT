@@ -1,6 +1,8 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Row, Col } from 'reactstrap';
+
+import Teamdropdown from './teamdropdown'
 // import PopoverItem from './popover'
 
 export default class Dropdown extends React.Component {
@@ -30,7 +32,7 @@ render(){
             <Nav navbar>
 
               <NavItem id='navitem'>
-                <NavLink  href="">Team</NavLink>
+                <NavLink onClick={this.toggle}>Team</NavLink>
               </NavItem>
 
 

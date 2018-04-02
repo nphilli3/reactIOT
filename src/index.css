@@ -150,9 +150,6 @@ section .row img {
   display: block;
   border: none;
 }
-#teambutton::after{
-  display: none;
-}
 
 #suggestbutton{
   font-size: 2rem;
@@ -163,14 +160,12 @@ section .row img {
   border: none;
 
 }
+
 #suggestbutton:hover{
   color: rgba(255, 255, 255, 0.5);
   background-color: #6c757d;
   display: block;
   border: none;
-}
-#suggestbutton::after{
-  display: none;
 }
 
 footer {

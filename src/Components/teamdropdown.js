@@ -26,7 +26,7 @@ class Teamdropdown extends Component {
   render() {
     return (
       <div>
-        <Button color="primary" className="block" onClick={this.toggle}>Team</Button>
+        <Button id='teambutton' className="block" onClick={this.toggle}>Team</Button>
         <Collapse isOpen={this.state.collapse}>
           <div>
             <Row>

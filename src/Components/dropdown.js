@@ -27,49 +27,41 @@ render(){
           <NavbarBrand href="/" className="mr-m2">Hilliard IOT</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar className="mr-m2 ">
-            <Col sm={{ size: 2, order: 0, offset: 10 }}>
-            <Row>
-              <NavItem>
+            <Nav navbar>
+
+              <NavItem id='navitem'>
                 <NavLink  href="">Team</NavLink>
               </NavItem>
-            </Row>
-            <Row>
-              <NavItem>
+
+
+              <NavItem id='navitem'>
                 <NavLink href="">Current Projects</NavLink>
               </NavItem>
-            </Row>
-            <Row>
-              <NavItem>
+
+              <NavItem id='navitem'>
                 <NavLink href="">Events</NavLink>
               </NavItem>
-            </Row>
-            <Row>
-              <NavItem>
+
+              <NavItem id='navitem'>
                 <NavLink href="">Suggestion Box</NavLink>
               </NavItem>
-            </Row>
-            <Row>
-              <NavItem>
+
+              <NavItem id='navitem'>
                 <NavLink href="">Temperature</NavLink>
               </NavItem>
-            </Row>
-            <Row>
-              <NavItem>
+
+              <NavItem id='navitem'>
                 <NavLink href="">Robot</NavLink>
               </NavItem>
-            </Row>
-            <Row>
-              <NavItem>
+
+              <NavItem id='navitem'>
                 <NavLink href="">Club Information</NavLink>
               </NavItem>
-            </Row>
-            <Row>
-              <NavItem>
+
+              <NavItem id='navitem'>
                 <NavLink href="">Contact Us</NavLink>
               </NavItem>
-            </Row>
-              </Col>
+
             </Nav>
           </Collapse>
         </Navbar>

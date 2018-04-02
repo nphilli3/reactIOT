@@ -135,10 +135,12 @@ section .row img {
 }
 #teambutton{
   font-size: 2rem;
+  font-weight: 700;
   color: rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
   display: block;
   border: none;
+  margin-bottom: 0;
 
 }
 #teambutton:hover{
@@ -152,6 +154,24 @@ section .row img {
   display: none;
 }
 
+#suggestbutton{
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  display: block;
+  border: none;
+
+}
+#suggestbutton:hover{
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #6c757d;
+  display: block;
+  border: none;
+}
+#suggestbutton::after{
+  display: none;
+}
 
 footer {
   font-size: 12px;

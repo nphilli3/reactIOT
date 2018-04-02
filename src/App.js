@@ -9,6 +9,7 @@ import Footer from './Components/footer'
 import MyCard from './Components/card' 
 import Teambuilder from './Components/teambuilder'
 import Teamdropdown from './Components/teamdropdown'
+import Suggestdropdown from './Components/suggestiondropdown'
 
 
 import './App.css'
@@ -28,6 +29,7 @@ class App extends Component {
         <Dropdown/>
         <Jumbo/>
         <Teamdropdown/>
+        <Suggestdropdown/>
         <Options/>
         
         <Footer/>

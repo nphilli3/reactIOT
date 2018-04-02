@@ -6,7 +6,7 @@ const MyCard = (props) => {
   return (
     <div className="col-sm-2">
       <Card>
-      <a href="{props.link}" id="cardlinkStyle">
+      <a href={props.link} id="cardlinkStyle">
         
         <CardBody>
           <CardTitle>{props.title}</CardTitle>

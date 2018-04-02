@@ -8,6 +8,7 @@ import RoDreko from '../images/RoDreko.jpeg'
 import Nate from '../images/Nate.jpeg'
 import Willie from '../images/Willie.jpeg'
 import Matt from '../images/matt.jpeg'
+import Tim from '../images/tim.jpeg'
 // Import Custom Components
 import MyCard from './card' 
 
@@ -30,12 +31,13 @@ class Teamdropdown extends Component {
         <Collapse isOpen={this.state.collapse}>
           <div>
             <Row>
-              <MyCard image={Elija} title='Elija Blosser'/>
-              <MyCard image={Don} title='Don Smoyer'/>
-              <MyCard image={RoDreko} title='RoDreko Steward'/>
-              <MyCard image={Nate} title='Nathanel Phillips'/>
-              <MyCard image={Willie} title='Willie'/>
-              <MyCard image={Matt} title='Matt Bunfill'/>
+              <MyCard image={Elija} title='Elija Blosser' link='https://intranet.global.dish.com/employeeSearchDetails/2892057/'/>
+              <MyCard image={Don} title='Don Smoyer' link='https://intranet.global.dish.com/employeeSearchDetails/285073/'/>
+              <MyCard image={RoDreko} title='RoDreko Steward'link='https://intranet.global.dish.com/employeeSearchDetails/532726/'/>
+              <MyCard image={Nate} title='Nathanel Phillips'link='https://intranet.global.dish.com/employeeSearchDetails/1693303/'/>
+              <MyCard image={Willie} title='Willie' link='https://intranet.global.dish.com/employeeSearchDetails/373709/'/>
+              <MyCard image={Matt} title='Matt Bunfill' link='https://intranet.global.dish.com/employeeSearchDetails/2848139/'/>
+              <MyCard image={Tim} title='Tim Glass' link='https://intranet.global.dish.com/employeeSearchDetails/2758043/'/>
             </Row>
           </div>
         </Collapse>

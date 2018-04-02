@@ -21,24 +21,46 @@ header h1 {
   margin: 0;
 }
 
+#cardlinkStyle,#cardlinkStyle:hover{
+  color:#000;
+  text-decoration: none;
+}
 
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.carimg {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 header p {
   padding: 0 20px;
   margin: 0;
 }
 
-.jumbotron {
+#superjumbo.myjumbotron {
   display: flex;
   align-items: center;
   background-image: url('images/raspberry-pi-wallpaper.png');
   background-size: cover;
   color: white;
-  height: 500px;
+  height: 50vh;
   text-shadow: 0.25px 0.25px 0.25px #000000;
+  margin-bottom: 0;
+  padding-bottom: 1px;
 }
 
-.jumbotron h2 {
+.jumbotron h1 {
   font-size: 60px;
   font-weight: bold;
   margin: 0;
@@ -52,7 +74,8 @@ header p {
 }
 .jumbobutton {
   float: none;
-  margin: 0 auto;
+  margin: 0;
+  margin-botom: 0;
 }
 
 section .row img {

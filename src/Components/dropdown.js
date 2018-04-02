@@ -1,6 +1,7 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
+// import PopoverItem from './popover'
 
 export default class Dropdown extends React.Component {
   constructor(props) {
@@ -23,10 +24,10 @@ render(){
     return (
       <div>
         <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">Hilliard IOT</NavbarBrand>
+          <NavbarBrand href="/" className="mr-m2">Hilliard IOT</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar className="mr-auto ">
+            <Nav navbar className="mr-m2 ">
             <Col sm={{ size: 2, order: 0, offset: 10 }}>
             <Row>
               <NavItem>
@@ -35,37 +36,37 @@ render(){
             </Row>
             <Row>
               <NavItem>
-                <NavLink className="float-right" href="">Current Projects</NavLink>
+                <NavLink href="">Current Projects</NavLink>
               </NavItem>
             </Row>
             <Row>
               <NavItem>
-                <NavLink className="float-right" href="">Events</NavLink>
+                <NavLink href="">Events</NavLink>
               </NavItem>
             </Row>
             <Row>
               <NavItem>
-                <NavLink className="float-right" href="">Suggestion Box</NavLink>
+                <NavLink href="">Suggestion Box</NavLink>
               </NavItem>
             </Row>
             <Row>
               <NavItem>
-                <NavLink className="float-right" href="">Temperature</NavLink>
+                <NavLink href="">Temperature</NavLink>
               </NavItem>
             </Row>
             <Row>
               <NavItem>
-                <NavLink className="float-right" href="">Robot</NavLink>
+                <NavLink href="">Robot</NavLink>
               </NavItem>
             </Row>
             <Row>
               <NavItem>
-                <NavLink className="float-right" href="">Club Information</NavLink>
+                <NavLink href="">Club Information</NavLink>
               </NavItem>
             </Row>
             <Row>
               <NavItem>
-                <NavLink className="float-right" href="">Contact Us</NavLink>
+                <NavLink href="">Contact Us</NavLink>
               </NavItem>
             </Row>
               </Col>

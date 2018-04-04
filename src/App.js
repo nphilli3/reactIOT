@@ -2,14 +2,16 @@ import React, { Component } from 'react'
 // import {Header, NavBar} from './Components/header'
 import { Row, Col } from 'reactstrap';
 import Maincarousel from './Components/carousel'
-import Dropdown from './Components/dropdown'
+import Navdropdown from './Components/navdropdown'
+import Header from './Components/header'
 import Jumbo from './Components/jumbo'
 import Options from'./Components/options'
 import Footer from './Components/footer' 
 import MyCard from './Components/card' 
+import Mydropdown from './Components/mydropdown' 
 import Teambuilder from './Components/teambuilder'
-import Teamdropdown from './Components/teamdropdown'
-import Suggestdropdown from './Components/suggestiondropdown'
+import Team from './Components/team'
+import Suggestions from './Components/suggestion'
 
 
 import './App.css'
@@ -26,12 +28,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Dropdown/>
+        <Navdropdown/>
         <Jumbo/>
-        <Teamdropdown/>
-        <Suggestdropdown/>
-        <Options/>
-        
         <Footer/>
       </div>
     );
@@ -39,7 +37,3 @@ class App extends Component {
 }
 
 export default App;
-
-        // <Col className='col-lg-6 offset-3'>
-        //   <Maincarousel/>
-        // </Col>

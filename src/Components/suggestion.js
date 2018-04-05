@@ -1,6 +1,6 @@
 // Import React and Reactstrap
 import React, { Component } from 'react';
-import { Collapse, Button, CardBody, Card, Row, Col } from 'reactstrap';
+
 
 const Suggestions = () => {
     return (

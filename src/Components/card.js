@@ -1,16 +1,13 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardImg } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardImg, CardHeader } from 'reactstrap';
 
 
 const MyCard = (props) => {
   return (
-    <div className="col-sm-2">
+    <div className="col-sm-2" id='myCard'>
       <Card>
       <a href={props.link} id="cardlinkStyle">
-        
-        <CardBody>
-          <CardTitle>{props.title}</CardTitle>
-        </CardBody>
+        <CardHeader>{props.title}</CardHeader>
         <CardImg top width="100%" src={props.image} alt="Card image cap" />
         </a>
       </Card>

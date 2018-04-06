@@ -4,6 +4,7 @@ import { Row, Col } from 'reactstrap';
 import Mydropdown from './mydropdown' 
 import Team from './team'
 import Suggestions from './suggestion'
+import ContactUs from './contactus'
 // import PopoverItem from './popover'
 
 export default class Navdropdown extends React.Component {
@@ -47,7 +48,7 @@ render(){
                 <NavLink>{<Mydropdown label='Suggestions'>{<Suggestions/>}</Mydropdown>}</NavLink>
               </NavItem>
               <NavItem id='navitem'>
-                <NavLink>{<Mydropdown label='Contact Us'></Mydropdown>}</NavLink>
+                <NavLink>{<Mydropdown label='Contact Us'>{<ContactUs/>}</Mydropdown>}</NavLink>
               </NavItem>
 
             </Nav>

@@ -1,19 +1,26 @@
 // Import React and Reactstrap
 import React, { Component } from 'react';
-import { Collapse, Button, CardBody, Card, Row, Col } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-const Suggestions = () => {
+const ContacUs = () => {
     return (
-      <div class="form-group">
-        <form action=''>
-          <label htmlFor="suggestion" id='suggestion'>Tell us how we can improve the center, all suggestions are welcome!</label>
-          <textarea className="form-control" rows="10" id="suggestiont"></textarea>
+       <FormGroup>
+       <Form action='submit'>
+       <label htmlFor="suggestion">What would you like to tell us?</label>
+          <Input type="email" name="email" id="contactEmail" placeholder="Your Email" />
+          <Input type='textarea' rows="10" id="myMessage" placeholder ='Your Message'></Input>
           <div className='text-right' id='save'>
             <button type="submit" formmethod="post" class="save">Save</button>
           </div>
-        </form>
-      </div>
+        </Form>
+      </FormGroup>
     );
   }
 
-export default Suggestions;
+export default ContacUs;
+
+
+<FormGroup>
+          <Label for="exampleText">Text Area</Label>
+          <Input type="textarea" name="text" id="exampleText" />
+        </FormGroup>

@@ -1,7 +1,6 @@
 // Import React and Reactstrap
 import React, { Component } from 'react';
 import { Collapse, Button } from 'reactstrap';
-import Currentprojects from './currentprojects'
 
 //Define class and toggle props
 class Mydropdown extends Component {

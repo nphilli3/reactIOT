@@ -1,6 +1,6 @@
 // Import React and Reactstrap
-import React, { Component } from 'react';
-import { Collapse, Button, CardBody, Card, Row, Col } from 'reactstrap';
+import React from 'react';
+import { Row } from 'reactstrap';
 // Import Images
 import Elija from '../images/Elija.jpeg'
 import Don from '../images/Don.jpeg'
@@ -10,7 +10,7 @@ import Willie from '../images/Willie.jpeg'
 import Matt from '../images/matt.jpeg'
 import Tim from '../images/tim.jpeg'
 // Import Custom Components
-import MyCard from './card' 
+import TeamCard from './cards/teamcard' 
 
 
 
@@ -28,13 +28,13 @@ const links = {
 const Team = (props) =>{
   return (
     <Row>
-      <MyCard image={Elija} title='Elija' link={links.ElijaLink}/>
-      <MyCard image={Don} title='Don' link={links.Donlink}/>
-      <MyCard image={RoDreko} title='RoDreko'link={links.RoDrekolink}/>
-      <MyCard image={Nate} title='Nate'link={links.Natelink}/>
-      <MyCard image={Willie} title='Willie' link={links.Willielink}/>
-      <MyCard image={Matt} title='Matt' link={links.Mattlink}/>
-      <MyCard image={Tim} title='Tim' link={links.Timlink}/>
+      <TeamCard image={Elija} title='Elija' link={links.ElijaLink}/>
+      <TeamCard image={Don} title='Don' link={links.Donlink}/>
+      <TeamCard image={RoDreko} title='RoDreko'link={links.RoDrekolink}/>
+      <TeamCard image={Nate} title='Nate'link={links.Natelink}/>
+      <TeamCard image={Willie} title='Willie' link={links.Willielink}/>
+      <TeamCard image={Matt} title='Matt' link={links.Mattlink}/>
+      <TeamCard image={Tim} title='Tim' link={links.Timlink}/>
     </Row>
   );
 }

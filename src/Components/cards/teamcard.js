@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardImg, CardHeader } from 'reactstrap';
+import { Card, CardImg, CardHeader } from 'reactstrap';
 
 
-const MyCard = (props) => {
+const TeamCard = (props) => {
   return (
     <div className="col-sm-2" id='myCard'>
       <Card>
@@ -15,4 +15,4 @@ const MyCard = (props) => {
   );
 };
 
-export default MyCard;
+export default TeamCard;

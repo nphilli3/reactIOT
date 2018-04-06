@@ -1,6 +1,6 @@
 // Import React and Reactstrap
-import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import React from 'react';
+import { Button, Form, FormGroup, Input } from 'reactstrap';
 
 const Suggestions = () => {
     return (

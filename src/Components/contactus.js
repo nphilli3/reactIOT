@@ -1,6 +1,6 @@
 // Import React and Reactstrap
-import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import React from 'react';
+import { Button, Form, FormGroup, Input } from 'reactstrap';
 
 const ContacUs = () => {
     return (
@@ -10,7 +10,7 @@ const ContacUs = () => {
           <Input type="email" name="email" id="contactEmail" placeholder="Your Email" />
           <Input type='textarea' rows="10" id="myMessage" placeholder ='Your Message'></Input>
           <div className='text-right' id='save'>
-            <button type="submit" formmethod="post" class="save">Save</button>
+            <Button type="submit" formmethod="post" class="save">Save</Button>
           </div>
         </Form>
       </FormGroup>
@@ -18,9 +18,3 @@ const ContacUs = () => {
   }
 
 export default ContacUs;
-
-
-<FormGroup>
-          <Label for="exampleText">Text Area</Label>
-          <Input type="textarea" name="text" id="exampleText" />
-        </FormGroup>

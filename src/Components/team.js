@@ -15,28 +15,65 @@ import TeamCard from './cards/teamcard'
 
 
 //Define class and toggle props
-const links = {
-  ElijaLink: 'https://intranet.global.dish.com/employeeSearchDetails/2892057/',
-  Donlink: 'https://intranet.global.dish.com/employeeSearchDetails/285073/',
-  RoDrekolink: 'https://intranet.global.dish.com/employeeSearchDetails/532726/',
-  Natelink: 'https://intranet.global.dish.com/employeeSearchDetails/1693303/',
-  Willielink: 'https://intranet.global.dish.com/employeeSearchDetails/373709/',
-  Mattlink: 'https://intranet.global.dish.com/employeeSearchDetails/2848139/',
-  Timlink: 'https://intranet.global.dish.com/employeeSearchDetails/2758043/'
-}
+const teamMembers = [
+  {
+    name: 'Elija',
+    link: 'https://intranet.global.dish.com/employeeSearchDetails/2892057/'
+  },
+  {
+    name: 'Don',
+    link: 'https://intranet.global.dish.com/employeeSearchDetails/285073/'
+  },
+  {
+    name:'RoDreko',
+    link: 'https://intranet.global.dish.com/employeeSearchDetails/532726/'
+  },
+  {
+    name:'Nate',
+    link: 'https://intranet.global.dish.com/employeeSearchDetails/1693303/'
+  },
+  {
+    name:'Willie',
+    link: 'https://intranet.global.dish.com/employeeSearchDetails/373709/'
+  },
+  {
+    name: 'Matt',
+    link: 'https://intranet.global.dish.com/employeeSearchDetails/2848139/'
+  },
+  {
+    name:'Tim',
+    link: 'https://intranet.global.dish.com/employeeSearchDetails/2758043/'
+  }
+]
 
 const Team = (props) =>{
   return (
+    <div>
     <Row>
-      <TeamCard image={Elija} title='Elija' link={links.ElijaLink}/>
-      <TeamCard image={Don} title='Don' link={links.Donlink}/>
-      <TeamCard image={RoDreko} title='RoDreko'link={links.RoDrekolink}/>
-      <TeamCard image={Nate} title='Nate'link={links.Natelink}/>
-      <TeamCard image={Willie} title='Willie' link={links.Willielink}/>
-      <TeamCard image={Matt} title='Matt' link={links.Mattlink}/>
-      <TeamCard image={Tim} title='Tim' link={links.Timlink}/>
+    <h2 id='teamTitle'>Facilitators</h2>
     </Row>
+    <Row>
+      <TeamCard image={Elija} title={teamMembers[0].name} link={teamMembers[0].link}/>
+      <TeamCard image={Nate} title={teamMembers[3].name}link={teamMembers[3].link}/>
+    </Row>
+    <Row>
+    <h2 id='teamTitle'>IT</h2>
+    </Row>
+    <Row>
+      <TeamCard image={Don} title={teamMembers[1].name} link={teamMembers[1].link}/>
+      <TeamCard image={Willie} title={teamMembers[4].name} link={teamMembers[4].link}/>
+      <TeamCard image={Tim} title={teamMembers[6].name} link={teamMembers[6].link}/>
+    </Row>  
+    <Row>
+      <h2 id='teamTitle'>DDCM</h2>
+    </Row>
+    <Row>
+      <TeamCard image={RoDreko} title={teamMembers[2].name}link={teamMembers[2].link}/>
+      <TeamCard image={Matt} title={teamMembers[5].name} link={teamMembers[5].link}/>
+    </Row>
+    </div>
   );
 }
 
 export default Team;
+

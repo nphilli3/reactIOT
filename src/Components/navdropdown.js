@@ -1,10 +1,12 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Row } from 'reactstrap';
 import Mydropdown from './mydropdown' 
 import Team from './team'
 import CurrentProjects from './currentprojects'
 import Suggestions from './suggestion'
 import ContactUs from './contactus'
+import ContactLead from './contactLead'
+import Users from './getusers'
 // import PopoverItem from './popover'
 
 export default class Navdropdown extends React.Component {
@@ -52,9 +54,29 @@ render(){
               <NavItem id='navitem'>
                 <NavLink>{<Mydropdown label='Suggestions'>{<Suggestions/>}</Mydropdown>}</NavLink>
               </NavItem>
+
+              <NavItem id='navitem'>
+                <NavLink>{
+                  <Mydropdown label='Users'>{
+                    <Mydropdown label='Get Users'>{
+                      <Users/>
+                    }
+                    </Mydropdown>
+                  }
+                  </Mydropdown>
+                }
+                </NavLink>
+              </NavItem>
              
               <NavItem id='navitem'>
-                <NavLink>{<Mydropdown label='Contact Us'>{<ContactUs/>}</Mydropdown>}</NavLink>
+                <NavLink>{<Mydropdown label='Contact Us'>{
+                  <Row>
+                    <ContactUs/>
+                    <ContactLead label='Elija'>
+                      <h5>Elija</h5>
+                    </ContactLead>
+                  </Row>
+                  }</Mydropdown>}</NavLink>
               </NavItem>
 
             </Nav>

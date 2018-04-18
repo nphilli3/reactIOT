@@ -1,9 +1,10 @@
 // Import React and Reactstrap
 import React from 'react';
-import { Button, Form, FormGroup, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Input, Col } from 'reactstrap';
 
-const ContacUs = () => {
+const ContacUs = (props) => {
     return (
+      <Col sm={6}>
        <FormGroup>
        <Form action='submit'>
        <label htmlFor="suggestion">What would you like to tell us?</label>
@@ -14,6 +15,7 @@ const ContacUs = () => {
           </div>
         </Form>
       </FormGroup>
+      </Col>
     );
   }
 

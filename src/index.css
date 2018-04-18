@@ -89,6 +89,12 @@ section .row img {
   border-color: black;
 }
 
+#teamTitle{
+  flex: 1;
+  justifyContent: 'center';
+  alignItems: 'center';
+}
+
 #spacer {
   padding-top: 30px;
   padding-bottom: 10px;

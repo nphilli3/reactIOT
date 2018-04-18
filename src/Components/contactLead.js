@@ -1,6 +1,6 @@
 // Import React and Reactstrap
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Input, Col, Collapse } from 'reactstrap';
+import { Button, Col, Collapse } from 'reactstrap';
 
 class ContactLead extends Component {
   	constructor(props) {

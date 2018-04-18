@@ -6,7 +6,7 @@ import CurrentProjects from './currentprojects'
 import Suggestions from './suggestion'
 import ContactUs from './contactus'
 import ContactLead from './contactLead'
-import Users from './getusers'
+
 // import PopoverItem from './popover'
 
 export default class Navdropdown extends React.Component {
@@ -53,19 +53,6 @@ render(){
              
               <NavItem id='navitem'>
                 <NavLink>{<Mydropdown label='Suggestions'>{<Suggestions/>}</Mydropdown>}</NavLink>
-              </NavItem>
-
-              <NavItem id='navitem'>
-                <NavLink>{
-                  <Mydropdown label='Users'>{
-                    <Mydropdown label='Get Users'>{
-                      <Users/>
-                    }
-                    </Mydropdown>
-                  }
-                  </Mydropdown>
-                }
-                </NavLink>
               </NavItem>
              
               <NavItem id='navitem'>

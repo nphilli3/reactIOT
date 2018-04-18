@@ -5,11 +5,11 @@ import { Button, Form, FormGroup, Input } from 'reactstrap';
 const Suggestions = () => {
     return (
       <FormGroup>
-        <Form action='submit'>
+        <Form method = 'post' action='/suggestion'>
           <label htmlFor="suggestion">Tell us how we can improve the center, all suggestions are welcome!</label>
-          <Input type='textarea' rows="5" id="suggestion"></Input>
+          <Input name='message' type='textarea' rows="5" id="suggestion"></Input>
           <div className='text-right' id='save'>
-            <Button type="submit" formMethod="post" className="save">Save</Button>
+            <Button type="submit" className='save'>Save</Button>
           </div>
         </Form>
       </FormGroup>

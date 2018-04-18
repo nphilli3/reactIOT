@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 // import {Header, NavBar} from './Components/header'
 import Navdropdown from './Components/navdropdown'
 import Jumbo from './Components/jumbo'
-import Button from 'reactstrap'
 import Footer from './Components/footer' 
 
 

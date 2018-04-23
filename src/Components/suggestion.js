@@ -2,12 +2,19 @@
 import React from 'react';
 import { Button, Form, FormGroup, Input } from 'reactstrap';
 
-const Suggestions = () => {
+const Suggestions = (props) => {
+  let route =''
+  if(!props.children){
+    route = '/suggestion'
+  }else{
+    route = '/projectsuggestion'
+  }
     return (
       <FormGroup>
-        <Form method = 'post' action='/suggestion'>
-          <label htmlFor="suggestion">Tell us how we can improve the center, all suggestions are welcome!</label>
-          <Input name='message' type='textarea' rows="5" id="suggestion"></Input>
+        <Form method = 'post' action={route}>
+          <label htmlFor="suggestion"></label>
+          {props.children}
+          <Input name='message' type='textarea' rows="5" placeholder={props.placeholder ||'Tell us How we can improve'}></Input>
           <div className='text-right' id='save'>
             <Button type="submit" className='save'>Save</Button>
           </div>

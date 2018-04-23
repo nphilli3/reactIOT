@@ -16,8 +16,7 @@ class ContactLead extends Component {
 
 	render(){
 		return(
-		<Col sm={6}>
-	        <h5>Contact a Leader for something specific</h5>
+		<Col sm={12}>
 	        <Button id="dropbutton" className="block" onClick={this.toggle}>{this.props.label}</Button>
 	        <Collapse isOpen={this.state.collapse}>
 		        <div>

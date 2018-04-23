@@ -1,13 +1,15 @@
 
 import React from 'react';
-import { Card, Button, CardTitle, CardText } from 'reactstrap';
+import { Card, CardTitle, CardText, Input } from 'reactstrap';
+import Mydropdown from '../mydropdown' 
+import Suggestions from '../suggestion'
 
 const ProjectCard = (props) => {
   return (
-      <Card body>
+      <Card>
         <CardTitle>{props.projectTitle}</CardTitle>
         <CardText>{props.projectText}</CardText>
-        <Button>{props.buttonLabel}</Button>
+        <Mydropdown label={props.buttonLabel}>{<Suggestions placeholder={props.placeholder}>{ <Input name='name' type='name' placeholder='Your Name'/>}</Suggestions>}</Mydropdown>
       </Card>
   );
 };

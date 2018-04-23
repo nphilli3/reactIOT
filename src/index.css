@@ -10,6 +10,11 @@ header {
   padding: 20px 0;
 }
 
+.card-body,#jumbocard{
+  flex: none;
+  padding: 1px;
+}
+
 header .row,
 footer .row {
   display: flex;

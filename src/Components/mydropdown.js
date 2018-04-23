@@ -17,7 +17,7 @@ class Mydropdown extends Component {
   render() {
     return (
       <div>
-        <Button id="dropbutton" className="block" onClick={this.toggle}>{this.props.label}</Button>
+        <Button id={this.props.id || 'dropbutton'} className={this.props.class || 'block'} onClick={this.toggle}>{this.props.label}</Button>
         <Collapse isOpen={this.state.collapse}>
           <div>
             {this.props.children}

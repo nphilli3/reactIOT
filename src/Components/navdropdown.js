@@ -1,8 +1,9 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Row } from 'reactstrap';
+import { Col, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Row } from 'reactstrap';
 import Mydropdown from './mydropdown' 
 import Team from './team'
-import CurrentProjects from './currentprojects'
+import Production from './productionprojects'
+import Cxo from './cxoprojects'
 import Suggestions from './suggestion'
 import ContactUs from './contactus'
 import ContactLead from './contactLead'
@@ -44,11 +45,15 @@ render(){
               </NavItem>
 
               <NavItem id='navitem'>
-                <NavLink>{<Mydropdown label='Current Projects'>{<CurrentProjects/>}</Mydropdown>}</NavLink>
+                <NavLink>{<Mydropdown label='Production Projects'>{<Production />}</Mydropdown>}</NavLink>
+              </NavItem>
+
+              <NavItem id='navitem'>
+                <NavLink>{<Mydropdown label='Cxo Projects'>{<Cxo/>}</Mydropdown>}</NavLink>
               </NavItem>
              
               <NavItem id='navitem'>
-                <NavLink>{<Mydropdown label='Events'></Mydropdown>}</NavLink>
+                <NavLink>{<Mydropdown label='Educational Outreach'></Mydropdown>}</NavLink>
               </NavItem>
              
               <NavItem id='navitem'>
@@ -56,14 +61,7 @@ render(){
               </NavItem>
              
               <NavItem id='navitem'>
-                <NavLink>{<Mydropdown label='Contact Us'>{
-                  <Row>
-                    <ContactUs/>
-                    <ContactLead label='Elija'>
-                      <h5>Elija</h5>
-                    </ContactLead>
-                  </Row>
-                  }</Mydropdown>}</NavLink>
+                <NavLink>{<Mydropdown label='Contact Us'>{<ContactUs/>}</Mydropdown>}</NavLink>
               </NavItem>
 
             </Nav>

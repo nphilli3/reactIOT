@@ -7,7 +7,7 @@ const ContacUs = (props) => {
       <Col sm={props.colsize || 12}>
        <FormGroup>
        <Form method='post' action='/contactus'>
-       <label htmlFor="suggestion">What would you like to tell us?</label>
+       <label htmlFor="suggestion">{props.title || "What would you like to tell us?"}</label>
           <Input type="name" name="name" id='contactName' placeholder="Your Name" />
           <Input type="email" name="email" id="contactEmail" placeholder="Your Email" />
           <Input type='textarea' name='message' rows="5" id="myMessage" placeholder ='Your Message'></Input>

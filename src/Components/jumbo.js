@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button, Collapse, Col, Row, Card, CardGroup, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
 import Mydropdown from './mydropdown'
+import ContactUs from './contactus'
 
 class Jumbo extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class Jumbo extends Component {
           <div>
           <CardGroup>
             <Col sm={4}>
-              <Mydropdown label='Hilliard Projects'></Mydropdown>
+              <Mydropdown label='Hilliard Projects'>{<ContactUs title="How can you help with Hilliard Projects"/>}</Mydropdown>
                 <Card>
                   <CardBody id='jumbocard'>
                   </CardBody>
@@ -44,7 +45,7 @@ class Jumbo extends Component {
             
             
               <Col sm={4}>
-              <Mydropdown label='Educational Outreach'></Mydropdown>
+              <Mydropdown label='Educational Outreach'>{<ContactUs title="How can you help with Educational Outreach?"/>}</Mydropdown>
                 <Card>
                   <CardBody id='jumbocard'>
                   </CardBody>
@@ -54,7 +55,7 @@ class Jumbo extends Component {
             
             
               <Col sm={4}>
-              <Mydropdown label='Production Projects'></Mydropdown>
+              <Mydropdown label='Production Projects'>{<ContactUs title="How can you help with production products?"/>}</Mydropdown>
                 <Card>
                   <CardBody id='jumbocard'>
                   </CardBody>

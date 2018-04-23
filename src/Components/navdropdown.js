@@ -61,7 +61,7 @@ render(){
               </NavItem>
              
               <NavItem id='navitem'>
-                <NavLink>{<Mydropdown label='Contact Us'>{<ContactUs/>}</Mydropdown>}</NavLink>
+                <NavLink>{<Mydropdown label='Contact Us'>{<ContactUs title='What would you like to tell us?'/>}</Mydropdown>}</NavLink>
               </NavItem>
 
             </Nav>
